@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Productivity Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <header>
+            <h1>Calendario de Acción Diaria</h1>
+            <p class="subtitle">Nexus Workspace • Proyectos en Paralelo</p>
+            <div class="progress-wrapper">
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="global-progress"></div>
+                </div>
+                <span id="progress-text">0% Completado</span>
+            </div>
+        </header>
+
+        <section id="calendar-grid" class="calendar-grid">
+            <!-- Los días se inyectan aquí vía JS -->
+        </section>
+        
+        <footer>
+            <button id="reset-btn" class="flat-btn">Reiniciar Progreso</button>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
